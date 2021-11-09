@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+SC&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Chelsea+Market&display=swap" rel="stylesheet">
+    <!-- font-family: 'Crimson Text', serif; -->
+    <title>VladFil: Quiz-Game of Thrones</title>
+</head>
+<body>
+    <header>
+        <div class="title-block">
+            <p id="name-surname">VLADYSLAV FILENKO</p>
+            <p>♛GAME OF THRONES♛</p>
+            <p id="quiz-title">◀Quiz▶</p>
+        </div>
+    </header>
+    <div class="app"> 
+        <span id="line"></span>       
+        <div class="container-questions" id="container-questions">
+            <!--1-->
+            <div class="question" id="question">
+                <div class="question-title">
+                    <p>I</p>
+                </div>               
+                <div class="question-text">
+                        <img src="./assets/images/line2.png" alt="">
+                        <p>Выберите животное из предложенных ниже вариантов</p>
+                        <div class="answers">
+                            <ul>
+                                <li>A: Дракон</li>
+                                <li>B: Кречет</li>
+                                <li>C: Вепрь</li>
+                                <li>D: Кот</li>
+                                <li>E: Другое</li>
+                            </ul>
+                        </div>
+                        <img src="./assets/images/line2.png" alt="">
+                </div>                    
+                <div class="question-buttons">
+                    <button onclick="houses[1].addPoints()">A</button>
+                    <button onclick="houses[0].addPoints()">B</button>
+                    <button onclick="houses[3].addPoints()">C</button>
+                    <button onclick="houses[2].addPoints()">D</button>
+                    <button onclick="houses[4].addPoints()">E</button>
+                </div>                             
+            </div>
+            <!--2-->
+            <div class="question" id="question">
+                <div class="question-title">
+                    <p>II</p>
+                </div>               
+                <div class="question-text">
+                        <img src="./assets/images/line2.png" alt="">
+                        <p>Вы любите читать?</p>
+                        <div class="answers">
+                            <ul>
+                                <li>A: Да</li>
+                                <li>B: Нет</li>
+                                <li>C: Затрудняюсь ответить</li>                                
+                            </ul>
+                        </div>
+                        <img src="./assets/images/line2.png" alt="">
+                </div>                    
+                <div class="question-buttons">
+                    <button onclick="houses[1].addPoints()">A</button>
+                    <button onclick="houses[2].addPoints()">B</button>
+                    <button onclick="houses[4].addPoints()">C</button>                  
+                </div>                             
+            </div>     
+            <!--3-->      
+            <div class="question" id="question">
+                <div class="question-title">
+                    <p>III</p>
+                </div>               
+                <div class="question-text">
+                        <img src="./assets/images/line2.png" alt="">
+                        <p>Какой фразой вы бы пригласили незванного гостя на ужин?</p>
+                        <div class="answers">
+                            <ul>
+                                <li>A: Пойдём поедим!</li>
+                                <li>B: Может вы хотите составить мне компанию за ужином?</li>
+                                <li>C: Я бы хотел пригласить Вас присоединиться к нашей семье</li>       
+                                <li>D: Если хотите есть, столовая прямо и на право. Просите у повара что угодно</li>                         
+                            </ul>
+                        </div>
+                        <img src="./assets/images/line2.png" alt="">
+                </div>                    
+                <div class="question-buttons">
+                    <button onclick="houses[3].addPoints()">A</button>
+                    <button onclick="houses[1].addPoints()">B</button>
+                    <button onclick="houses[0].addPoints()">C</button>    
+                    <button onclick="houses[2].addPoints()">D</button>                
+                </div>                             
+            </div>     
+            <!--4-->                  
+            <div class="question" id="question">
+                <div class="question-title">
+                    <p>IV</p>
+                </div>               
+                <div class="question-text">
+                        <img src="./assets/images/line2.png" alt="">
+                        <p>Какой тип климата вам по душе?</p>
+                        <div class="answers">
+                            <ul>
+                                <li> A: Умеренный </li>
+                                <li> B: Арктический </li>
+                                <li> C: Тропический </li>       
+                                <li> D: Субтропический </li>                         
+                            </ul>
+                        </div>
+                        <img src="./assets/images/line2.png" alt="">
+                </div>                    
+                <div class="question-buttons">
+                    <button onclick="houses[1].addPoints()">A</button>
+                    <button onclick="houses[0].addPoints()">B</button>
+                    <button onclick="houses[4].addPoints()">C</button>    
+                    <button onclick="houses[2].addPoints()">D</button>                
+                </div>                             
+            </div>  
+            <!--5--> 
+            <div class="question" id="question">
+                <div class="question-title">
+                    <p>V</p>
+                </div>               
+                <div class="question-text">
+                        <img src="./assets/images/line2.png" alt="">
+                        <p>Чего вы больше всего боитесь?</p>
+                        <div class="answers">
+                            <ul>
+                                <li>A: Белых ходоков</li>
+                                <li>B: Безликих</li>
+                                <li>C: Дотракийцев</li>
+                                <li>D: Дорнийцев</li>
+                                <li>E: Другой вариант</li>
+                            </ul>
+                        </div>
+                        <img src="./assets/images/line2.png" alt="">
+                </div>                    
+                <div class="question-buttons">
+                    <button onclick="houses[0].addPoints()">A</button>
+                    <button onclick="houses[2].addPoints()">B</button>
+                    <button onclick="houses[3].addPoints()">C</button>
+                    <button onclick="houses[1].addPoints()">D</button>
+                    <button onclick="houses[4].addPoints()">E</button>
+                </div>                             
+            </div>  
+            <!--6-->
+            <div class="question" id="question">
+                <div class="question-title">
+                    <p>VI</p>
+                </div>               
+                <div class="question-text">
+                        <img src="./assets/images/line2.png" alt="">
+                        <p>Выберите развлечение по душе</p>
+                        <div class="answers">
+                            <ul>
+                                <li>A: Рыцарский турнир</li>
+                                <li>B: Охота</li>
+                                <li>C: Игра на музыкальных инструментах</li>
+                                <li>D: Бросать предметы со скалы</li>
+                                <li>E: Азартные игры на деньги</li>
+                            </ul>
+                        </div>
+                        <img src="./assets/images/line2.png" alt="">
+                </div>                    
+                <div class="question-buttons">
+                    <button onclick="houses[3].addPoints()">A</button>
+                    <button onclick="houses[0].addPoints()">B</button>
+                    <button onclick="houses[2].addPoints()">C</button>
+                    <button onclick="houses[4].addPoints()">D</button>
+                    <button onclick="houses[1].addPoints()">E</button>
+                </div>                             
+            </div>  
+            <!--7-->
+            <div class="question" id="question">
+                <div class="question-title">
+                    <p>VII</p>
+                </div>               
+                <div class="question-text">
+                        <img src="./assets/images/line2.png" alt="">
+                        <p>Что для вас на первом месте?</p>
+                        <div class="answers">
+                            <ul>
+                                <li>A: Семья</li>
+                                <li>B: Любимое дело</li>
+                                <li>C: Деньги</li>
+                                <li>D: Развлечения</li>
+                                <li>E: Другое</li>
+                            </ul>
+                        </div>
+                        <img src="./assets/images/line2.png" alt="">
+                </div>                    
+                <div class="question-buttons">
+                    <button onclick="houses[0].addPoints()">A</button>
+                    <button onclick="houses[3].addPoints()">B</button>
+                    <button onclick="houses[1].addPoints()">C</button>
+                    <button onclick="houses[2].addPoints()">D</button>
+                    <button onclick="houses[4].addPoints()">E</button>
+                </div>                             
+            </div> 
+            <!--8-->
+            <div class="question" id="question">
+                <div class="question-title">
+                    <p>VIII</p>
+                </div>               
+                <div class="question-text">
+                        <img src="./assets/images/line2.png" alt="">
+                        <p>Кого из перечисленных персонажей вы бы назначили своим десницей</p>
+                        <div class="answers">
+                            <ul>
+                                <li>A: Тирион</li>
+                                <li>B: Нед Старк</li>
+                                <li>C: Бринден "Чёрная рыба" Талли</li>
+                                <li>D: Оберин Мартелл</li>
+                                <li>E: Другого персонажа</li>
+                            </ul>
+                        </div>
+                        <img src="./assets/images/line2.png" alt="">
+                </div>                    
+                <div class="question-buttons">
+                    <button onclick="houses[1].addPoints()">A</button>
+                    <button onclick="houses[3].addPoints()">B</button>
+                    <button onclick="houses[0].addPoints()">C</button>
+                    <button onclick="houses[2].addPoints()">D</button>
+                    <button onclick="houses[4].addPoints()">E</button>
+                </div>                             
+            </div> 
+            <!--9-->
+            <div class="question" id="question">
+                <div class="question-title">
+                    <p>IX</p>
+                </div>               
+                <div class="question-text">
+                        <img src="./assets/images/line2.png" alt="">
+                        <p>Кого из перечисленных персонажей вы бы назначили командующим Королевской гвардией</p>
+                        <div class="answers">
+                            <ul>
+                                <li>A: Арья Старк</li>
+                                <li>B: Джейме Ланнистер</li>
+                                <li>C: Бриенна Тарт</li>
+                                <li>D: Джорах Мормонт</li>
+                                <li>E: Лорас Тирелл</li>
+                            </ul>
+                        </div>
+                        <img src="./assets/images/line2.png" alt="">
+                </div>                    
+                <div class="question-buttons">
+                    <button onclick="houses[0].addPoints()">A</button>
+                    <button onclick="houses[1].addPoints()">B</button>
+                    <button onclick="houses[3].addPoints()">C</button>
+                    <button onclick="houses[4].addPoints()">D</button>
+                    <button onclick="houses[2].addPoints()">E</button>
+                </div>                             
+            </div> 
+        </div>
+        <div class="result" id="result">
+            <p id="result-message">Heloo</p>
+            <img src="#" id="emblem" width="125"></img>            
+        </div>
+        <a href="#" onclick="calculateResult()" id="result-button">Завершить тест</a>    
+    </div>
+   
+    <script src="./main.js"></script>
+</body>
+</html>
