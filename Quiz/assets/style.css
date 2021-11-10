@@ -232,4 +232,9 @@ body {
         width: 345px;
         background-image: url("./images/result_panel.png");
     }
+    .answers ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;         
+    }
 }
