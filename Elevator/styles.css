@@ -1,0 +1,81 @@
+/* General */
+body {
+    background-color: black;
+}
+.block-elevator {
+    margin-top: 350px;
+    width: 200px;
+    height: 350px;
+    background-color: lightgrey;
+    animation-name: none;
+    animation-duration: 7s;
+    animation-iteration-count: 1;   
+}
+@keyframes move-down {
+    from {margin-top: 0px;}
+    to {margin-top: 350px;}
+}
+@keyframes move-up {
+    from {margin-top: 350px;}
+    to {margin-top: 0px;}
+}
+/* Hotel */
+.block-hotel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 1280px;
+    height: 700px;
+    background-image: url(./images/hotelbg.png);
+}
+/* UI */
+.down {    
+    bottom: 0;
+    background: url(./images/button.png);
+    background-size: 100px 100px;
+    margin-bottom: 5px;
+    width: 100px;
+    height: 100px;
+    border: none;
+    cursor: pointer;
+    font-family: 'Martel', serif;
+    font-weight: 700;
+    font-size: 30px;
+}
+.control-panel {
+    position: fixed;
+    bottom: 0;
+    width: 680px;
+    height: 150px;      
+    background-image: url(./images/buttons_panel.png); 
+    background-size: 680px 150px; 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+.passengers-input {
+    width: 272px;
+    height: 74px;
+    border-radius: 40px;
+    background: #20150F;
+    border: 0;
+    outline: none;
+    font-size: 30px;
+    text-align: center;
+    font-family: 'Martel', serif;
+    font-weight: 700;
+    color: rgb(147, 113, 30);
+    box-shadow: 0px 4px 4px rgba(160, 160, 160, 0.22), inset 0px 8px 5px rgba(0, 0, 0, 0.25);
+}
+.control-panel-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    right: 20px;
+    bottom: 0;
+    width: 334px;
+    height: 125px;
+    background-color: #3C1A11;
+}

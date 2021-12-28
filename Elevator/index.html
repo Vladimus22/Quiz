@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Martel:wght@200;700&display=swap" rel="stylesheet">
+    <title>Elevator</title>
+</head>
+<body>    
+    <div class="block-hotel">
+        <div class="block-elevator" id="block-elevator"></div>
+    </div>    
+    <div class="control-panel">
+        <button class="down" onclick="elevator1.moveDown()">1</button>
+        <button class="down" onclick="elevator1.moveUp()">2</button>
+        <button class="down" onclick="elevator1.moveDown()">3</button>
+    </div>
+    <div class="control-panel-2">
+        <input type="text" name="Passengers" id="count-passengers" class="passengers-input"
+        value="0">
+    </div>    
+    <script src="./js/elevator.js"></script>
+</body>
+</html>
